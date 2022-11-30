@@ -37,4 +37,9 @@ jobs:
           
   deploy:
     runs-on: ubuntu-latest
-    environment: production
+    environment: 
+      name: production
+      url: google.com
+    steps:
+      - name: Run Deploy
+        run: echo Deploy
